@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Level 1 - Smart City AI Recovery Dashboard</title>
+
+    <link rel="stylesheet" href="level1.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+
+        <header>
+
+            <h1>SMART CITY CENTRAL CONSOLE</h1>
+
+            <h2>LEVEL 1 - Station Ordering & Disorder Analysis</h2>
+
+            <div class="status">
+
+                SYSTEM STATUS :
+                <span>CORRUPTED</span>
+
+            </div>
+
+        </header>
+
+
+        <!-- PROBLEM -->
+
+        <section>
+
+            <h3>Problem Statement</h3>
+
+            <p>
+                Convert station identifiers into numerical signal values,
+                restore the correct order, and detect disorder using inversion count.
+            </p>
+
+        </section>
+
+
+        <!-- INPUT STATIONS -->
+
+        <section>
+
+            <h3>Input Stations</h3>
+
+            <div class="station-container" id="stationContainer">
+
+            </div>
+
+        </section>
+
+
+        <!-- BUTTONS -->
+
+        <section class="button-section">
+
+            <button onclick="convertValues()">
+                Convert ASCII Values
+            </button>
+
+            <button onclick="sortStations()">
+                Sort Stations
+            </button>
+
+            <button onclick="countInversions()">
+                Count Inversions
+            </button>
+
+            <button onclick="resetSystem()">
+                Reset System
+            </button>
+
+        </section>
+
+
+        <!-- ASCII TABLE -->
+
+        <section>
+
+            <h3>ASCII Conversion Table</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Station</th>
+                        <th>ASCII Value</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="tableBody">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- SORTED OUTPUT -->
+
+        <section>
+
+            <h3>Recovered Signal Order</h3>
+
+            <div class="sorted-output" id="sortedOutput">
+
+                Waiting for signal recovery...
+
+            </div>
+
+        </section>
+
+
+        <!-- INVERSION -->
+
+        <section>
+
+            <h3>Total Disorder Detected</h3>
+
+            <div class="inversion-box">
+
+                Inversion Count :
+                <span id="inversionCount">0</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- NAVIGATION -->
+
+        <section class="navigation-section">
+
+            <h3>Navigate Between Levels</h3>
+
+            <div class="nav-buttons">
+
+                <button class="active-level">
+                    LEVEL 1
+                </button>
+
+                <button onclick="goToLevel2()">
+                    LEVEL 2
+                </button>
+
+                <button onclick="goToLevel3()">
+                    LEVEL 3
+                </button>
+
+                <button onclick="goToLevel4()">
+                    LEVEL 4
+                </button>
+
+                <button onclick="goToLevel5()">
+                    LEVEL 5
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="level1.js"></script>
+
+</body>
+
+</html>

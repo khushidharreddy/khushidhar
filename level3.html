@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Level 3 - Network Reconstruction Dashboard</title>
+
+    <link rel="stylesheet" href="level3.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+
+        <header>
+
+            <h1>SMART CITY CENTRAL CONSOLE</h1>
+
+            <h2>LEVEL 3 - Network Reconstruction</h2>
+
+            <div class="status">
+
+                SYSTEM STATUS :
+                <span>NETWORK FAILURE</span>
+
+            </div>
+
+        </header>
+
+
+        <!-- PROBLEM -->
+
+        <section>
+
+            <h3>Problem Statement</h3>
+
+            <p>
+                Restore the communication backbone of the smart-city network
+                while minimizing restoration cost and avoiding cyclic redundancy.
+            </p>
+
+        </section>
+
+
+        <!-- MATRIX -->
+
+        <section>
+
+            <h3>Weighted Connectivity Matrix</h3>
+
+            <div id="matrixContainer"></div>
+
+        </section>
+
+
+        <!-- BUTTONS -->
+
+        <section class="button-section">
+
+            <button onclick="buildMST()">
+                Build Minimum Network
+            </button>
+
+            <button onclick="convertBinary()">
+                Convert Cost To Binary
+            </button>
+
+            <button onclick="resetSystem()">
+                Reset System
+            </button>
+
+        </section>
+
+
+        <!-- SAFE CONNECTIONS -->
+
+        <section>
+
+            <h3>Selected Safe Connections</h3>
+
+            <div id="edgeOutput">
+
+                Waiting for reconstruction...
+
+            </div>
+
+        </section>
+
+
+        <!-- TOTAL COST -->
+
+        <section>
+
+            <h3>Total Restoration Cost</h3>
+
+            <div class="cost-box" id="costOutput">
+
+                0
+
+            </div>
+
+        </section>
+
+
+        <!-- BINARY -->
+
+        <section>
+
+            <h3>Binary Conversion</h3>
+
+            <div class="binary-box" id="binaryOutput">
+
+                Waiting for binary conversion...
+
+            </div>
+
+        </section>
+
+
+        <!-- CONSOLE -->
+
+        <section>
+
+            <h3>System Console</h3>
+
+            <div class="console" id="consoleOutput">
+
+                > Smart City Network Recovery Initialized... <br>
+
+            </div>
+
+        </section>
+
+
+        <!-- NAVIGATION -->
+
+        <section class="navigation-section">
+
+            <h3>Navigate Between Levels</h3>
+
+            <div class="nav-buttons">
+
+                <button onclick="goToLevel1()">
+                    LEVEL 1
+                </button>
+
+                <button onclick="goToLevel2()">
+                    LEVEL 2
+                </button>
+
+                <button class="active-level">
+                    LEVEL 3
+                </button>
+
+                <button onclick="goToLevel4()">
+                    LEVEL 4
+                </button>
+
+                <button onclick="goToLevel5()">
+                    LEVEL 5
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="level3.js"></script>
+
+</body>
+
+</html>

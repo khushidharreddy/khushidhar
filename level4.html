@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Level 4 - The Grid of Vital Energy</title>
+
+    <link rel="stylesheet" href="level4.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+
+        <header>
+
+            <h1>SMART CITY CENTRAL CONSOLE</h1>
+
+            <h2>LEVEL 4 - The Grid of Vital Energy</h2>
+
+            <div class="status">
+
+                SYSTEM STATUS :
+                <span>ENERGY CRITICAL</span>
+
+            </div>
+
+        </header>
+
+
+        <!-- PROBLEM -->
+
+        <section>
+
+            <h3>Problem Statement</h3>
+
+            <p>
+                Select the best combination of city zones while keeping
+                total energy usage within the available limit and maximizing
+                survival benefit.
+            </p>
+
+        </section>
+
+
+        <!-- ENERGY INFO -->
+
+        <section>
+
+            <h3>Total Energy Available</h3>
+
+            <div class="energy-box">
+
+                20 kWh
+
+            </div>
+
+        </section>
+
+
+        <!-- TABLE -->
+
+        <section>
+
+            <h3>Energy Grid Data</h3>
+
+            <div id="tableContainer"></div>
+
+        </section>
+
+
+        <!-- BUTTONS -->
+
+        <section class="button-section">
+
+            <button onclick="optimizeGrid()">
+                Optimize Energy Grid
+            </button>
+
+            <button onclick="generateKey()">
+                Generate Unlock Code
+            </button>
+
+            <button onclick="resetSystem()">
+                Reset System
+            </button>
+
+        </section>
+
+
+        <!-- SELECTED ZONES -->
+
+        <section>
+
+            <h3>Selected Zones</h3>
+
+            <div id="selectedZones">
+
+                Waiting for optimization...
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULTS -->
+
+        <section>
+
+            <h3>Optimization Results</h3>
+
+            <div class="result-box">
+
+                <p>Total Energy Used :
+                    <span id="energyUsed">0</span>
+                </p>
+
+                <p>Total Benefit :
+                    <span id="benefitOutput">0</span>
+                </p>
+
+                <p>Selected Zones Count :
+                    <span id="zoneCount">0</span>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL CODE -->
+
+        <section>
+
+            <h3>Final Unlock Code</h3>
+
+            <div class="code-box" id="finalCode">
+
+                Waiting for unlock code...
+
+            </div>
+
+        </section>
+
+
+        <!-- CONSOLE -->
+
+        <section>
+
+            <h3>System Console</h3>
+
+            <div class="console" id="consoleOutput">
+
+                > Energy Grid Management System Initialized... <br>
+
+            </div>
+
+        </section>
+
+
+        <!-- NAVIGATION -->
+
+        <section class="navigation-section">
+
+            <h3>Navigate Between Levels</h3>
+
+            <div class="nav-buttons">
+
+                <button onclick="goToLevel1()">
+                    LEVEL 1
+                </button>
+
+                <button onclick="goToLevel2()">
+                    LEVEL 2
+                </button>
+
+                <button onclick="goToLevel3()">
+                    LEVEL 3
+                </button>
+
+                <button class="active-level">
+                    LEVEL 4
+                </button>
+
+                <button onclick="goToLevel5()">
+                    LEVEL 5
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="level4.js"></script>
+
+</body>
+
+</html>

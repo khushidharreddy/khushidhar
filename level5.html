@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Level 5 - Critical Route Recovery</title>
+
+    <link rel="stylesheet" href="level5.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+
+        <header>
+
+            <h1>SMART CITY CENTRAL CONSOLE</h1>
+
+            <h2>LEVEL 5 - Critical Route Recovery</h2>
+
+            <div class="status">
+
+                SYSTEM STATUS :
+                <span>ROUTING FAILURE</span>
+
+            </div>
+
+        </header>
+
+
+        <!-- PROBLEM -->
+
+        <section>
+
+            <h3>Problem Statement</h3>
+
+            <p>
+                Determine the shortest valid transmission route
+                from source node Z2 to destination node Z6
+                while minimizing the total transmission cost.
+            </p>
+
+        </section>
+
+
+        <!-- SOURCE DESTINATION -->
+
+        <section class="info-section">
+
+            <div class="info-box">
+
+                SOURCE NODE :
+                <span>Z2</span>
+
+            </div>
+
+            <div class="info-box">
+
+                DESTINATION NODE :
+                <span>Z6</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- MATRIX -->
+
+        <section>
+
+            <h3>Distance Matrix</h3>
+
+            <div id="matrixContainer"></div>
+
+        </section>
+
+
+        <!-- BUTTONS -->
+
+        <section class="button-section">
+
+            <button onclick="findShortestPath()">
+                Find Shortest Route
+            </button>
+
+            <button onclick="generateUnlockCode()">
+                Generate Unlock Code
+            </button>
+
+            <button onclick="resetSystem()">
+                Reset System
+            </button>
+
+        </section>
+
+
+        <!-- ROUTE -->
+
+        <section>
+
+            <h3>Shortest Route</h3>
+
+            <div class="route-box" id="routeOutput">
+
+                Waiting for route analysis...
+
+            </div>
+
+        </section>
+
+
+        <!-- COST -->
+
+        <section>
+
+            <h3>Minimum Transmission Cost</h3>
+
+            <div class="cost-box" id="costOutput">
+
+                0
+
+            </div>
+
+        </section>
+
+
+        <!-- CODE -->
+
+        <section>
+
+            <h3>Final Access Code</h3>
+
+            <div class="code-box" id="codeOutput">
+
+                Waiting for unlock code...
+
+            </div>
+
+        </section>
+
+
+        <!-- CONSOLE -->
+
+        <section>
+
+            <h3>System Console</h3>
+
+            <div class="console" id="consoleOutput">
+
+                > Emergency Routing System Initialized... <br>
+
+            </div>
+
+        </section>
+
+
+        <!-- NAVIGATION -->
+
+        <section class="navigation-section">
+
+            <h3>Navigate Between Levels</h3>
+
+            <div class="nav-buttons">
+
+                <button onclick="goToLevel1()">
+                    LEVEL 1
+                </button>
+
+                <button onclick="goToLevel2()">
+                    LEVEL 2
+                </button>
+
+                <button onclick="goToLevel3()">
+                    LEVEL 3
+                </button>
+
+                <button onclick="goToLevel4()">
+                    LEVEL 4
+                </button>
+
+                <button class="active-level">
+                    LEVEL 5
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="level5.js"></script>
+
+</body>
+
+</html>
