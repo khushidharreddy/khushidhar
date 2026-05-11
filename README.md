@@ -1,2 +1,2 @@
-# Khushidhar Reddy
+# khushidhar
 ...
